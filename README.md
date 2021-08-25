@@ -4,6 +4,8 @@ this is a very simple progress bar to use in HTML
 
 ## Use example:
 
+  
+  const pbar = document.getElementById('pbar');
   const bar = new ProgressBar(pbar);
   
   setTimeout(()=>{
