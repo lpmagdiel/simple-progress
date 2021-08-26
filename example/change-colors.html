@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Progress Bar</title>
+</head>
+<body>
+    <div id="pbar"></div>
+
+    <script src="../lib/spbar.js"></script>
+
+    <script>
+        const pbar = document.getElementById('pbar');
+        const bar = new ProgressBar(pbar);
+        bar.value = 0.5;
+        bar.background = '#45B39D';
+        bar.color = 'white';
+    </script>
+</body>
+</html>

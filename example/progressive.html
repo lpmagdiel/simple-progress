@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Progress Bar</title>
+</head>
+<body>
+    <div id="pbar"></div>
+
+    <script src="../lib/spbar.js"></script>
+
+    <script>
+        const pbar = document.getElementById('pbar');
+        const bar = new ProgressBar(pbar);
+        var progressCount = 0;
+
+
+        var time = setInterval(()=>{
+            progressCount+=0.05;
+            bar.value = progressCount;
+            if(progressCount > 1){
+                clearInterval(time);
+            }
+        },1000);
+    </script>
+</body>
+</html>
